@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.bank.controllers.MainController" stylesheets="/styles/application.css">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <HBox spacing="10">
+        <Button text="Nouveau Client" onAction="#showNewClientDialog"/>
+        <Button text="Nouveau Compte" onAction="#showNewAccountDialog"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button text="Dépôt" onAction="#showDepositDialog"/>
+        <Button text="Retrait" onAction="#showWithdrawalDialog"/>
+        <Button text="Virement" onAction="#showTransferDialog"/>
+        <Button text="Générer Relevé" onAction="#generateSelectedAccountStatement"/>
+    </HBox>
+
+    <SplitPane VBox.vgrow="ALWAYS" orientation="VERTICAL">
+        <VBox spacing="5">
+            <Label text="Liste des Clients" styleClass="section-title"/>
+            <TableView fx:id="clientsTable" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="clientIdColumn" text="ID"/>
+                    <TableColumn fx:id="clientNomColumn" text="Nom"/>
+                    <TableColumn fx:id="clientPrenomColumn" text="Prénom"/>
+                    <TableColumn fx:id="clientEmailColumn" text="Email"/>
+                </columns>
+            </TableView>
+        </VBox>
+        <VBox spacing="5">
+            <Label text="Liste des Comptes" styleClass="section-title"/>
+            <TableView fx:id="comptesTable" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="compteNumeroColumn" text="Numéro"/>
+                    <TableColumn fx:id="compteSoldeColumn" text="Solde"/>
+                    <TableColumn fx:id="compteDateColumn" text="Date Création"/>
+                    <TableColumn fx:id="compteClientColumn" text="Client"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </SplitPane>
+</VBox>

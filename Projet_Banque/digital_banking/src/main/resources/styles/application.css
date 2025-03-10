@@ -1,0 +1,165 @@
+.root {
+    font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f5f5f5;
+    -fx-background-color: #f5f5f5;
+}
+
+.menu-bar {
+    background-color: #2c3e50;
+    -fx-background-color: #2c3e50;
+}
+
+.menu-bar .label {
+    -fx-text-fill: white;
+}
+
+.menu-item {
+    padding: 5px;
+    -fx-padding: 5px;
+}
+
+.menu-item:hover {
+    background-color: #34495e;
+    -fx-background-color: #34495e;
+}
+
+.button {
+    background-color: #2196F3;
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+    font-weight: bold;
+    -fx-font-weight: bold;
+    padding: 8px 15px;
+    -fx-padding: 8 15;
+    cursor: pointer;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    background-color: #1976D2;
+    -fx-background-color: #1976D2;
+}
+
+.section-title {
+    font-size: 16px;
+    -fx-font-size: 16px;
+    font-weight: bold;
+    -fx-font-weight: bold;
+    padding: 5px 0;
+    -fx-padding: 5 0;
+}
+
+.table-view {
+    background-color: white;
+    -fx-background-color: white;
+    border-color: #E0E0E0;
+    -fx-border-color: #E0E0E0;
+    border-width: 1px;
+    -fx-border-width: 1;
+}
+
+.table-view .column-header {
+    background-color: #2196F3;
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    font-weight: bold;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    background-color: white;
+    -fx-background-color: white;
+    border-color: transparent #ddd transparent transparent;
+    -fx-border-color: transparent #ddd transparent transparent;
+    border-width: 0 1px 0 0;
+    -fx-border-width: 0 1px 0 0;
+}
+
+.table-row-cell:odd {
+    background-color: #f9f9f9;
+    -fx-background-color: #f9f9f9;
+}
+
+.table-row-cell:selected {
+    background-color: #BBDEFB;
+    -fx-background-color: #BBDEFB;
+}
+
+.tab-pane {
+    background-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.tab {
+    background-color: #34495e;
+    -fx-background-color: #34495e;
+}
+
+.tab:selected {
+    background-color: #2c3e50;
+    -fx-background-color: #2c3e50;
+}
+
+.tab .tab-label {
+    -fx-text-fill: white;
+}
+
+.dialog-pane {
+    background-color: white;
+    -fx-background-color: white;
+}
+
+.dialog-pane .header-panel {
+    background-color: #34495e;
+    -fx-background-color: #34495e;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+}
+
+.dialog-pane .button {
+    background-color: #2196F3;
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+}
+
+.dialog-pane .button:hover {
+    background-color: #1976D2;
+    -fx-background-color: #1976D2;
+}
+
+.text-field {
+    padding: 8px;
+    -fx-padding: 8px;
+    border-color: #ddd;
+    -fx-border-color: #ddd;
+    border-radius: 3px;
+    -fx-border-radius: 3px;
+    background-color: white;
+    -fx-background-color: white;
+}
+
+.text-field:focused {
+    border-color: #3498db;
+    -fx-border-color: #3498db;
+}
+
+.split-pane {
+    background-color: transparent;
+    -fx-background-color: transparent;
+    -fx-box-border: transparent;
+}
+
+.split-pane:horizontal > .split-pane-divider,
+.split-pane:vertical > .split-pane-divider {
+    background-color: #E0E0E0;
+    -fx-background-color: #E0E0E0;
+    padding: 0 1px;
+    -fx-padding: 0 1;
+}
